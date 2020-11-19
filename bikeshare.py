@@ -217,13 +217,13 @@ def user_stats(df):
     # TO DO: Display earliest, most recent, and most common year of birth
     if 'Birth Year' in df.columns:
         most_common_birth_year = df['Birth Year'].value_counts().idxmax()
-        common_BY_counter = df['Birth Year'].value_counts().max()
+        common_by_counter = df['Birth Year'].value_counts().max()
         ealiest_birth_year = min(df['Birth Year'])
         recent_birth_year = max(df['Birth Year'])
 
         print(f'\nThe most recent Birth Year: {recent_birth_year}')
         print(f'The earliest Birth Year: {ealiest_birth_year}')
-        print(f'The most common Birth Year: {most_common_birth_year} Counter: {common_BY_counter}')
+        print(f'The most common Birth Year: {most_common_birth_year} Counter: {common_by_counter}')
     else:
         print('\nThere are no information about the birth year!')
 
@@ -232,15 +232,15 @@ def user_stats(df):
 
 def raw_data(df):
     output_max = 5
-    i = 0
+    n = 0
     check_raw_data = input('\nWould you like to check some specific individual Data? Enter yes or no.\n')
     while True:
         if check_raw_data.lower() != 'yes':
             break
 
-        while i < output_max:
-            print(f'{df.iloc[i]}\n')
-            i += 1
+        while n < output_max:
+            print(f'{df.iloc[n]}\n')
+            n += 1
         output_max += 5
         check_raw_data = input('\nWould you like to check more specific individual Data? Enter yes or no.\n')
 
