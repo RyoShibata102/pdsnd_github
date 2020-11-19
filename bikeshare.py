@@ -232,15 +232,15 @@ def user_stats(df):
 
 def raw_data(df):
     output_max = 5
-    i = 0
+    n = 0
     check_raw_data = input('\nWould you like to check some specific individual Data? Enter yes or no.\n')
     while True:
         if check_raw_data.lower() != 'yes':
             break
 
-        while i < output_max:
-            print(f'{df.iloc[i]}\n')
-            i += 1
+        while n < output_max:
+            print(f'{df.iloc[n]}\n')
+            n += 1
         output_max += 5
         check_raw_data = input('\nWould you like to check more specific individual Data? Enter yes or no.\n')
 
