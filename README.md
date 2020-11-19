@@ -2,10 +2,10 @@
 Project: 15.06.2020    
 Readme: 19.11.2020
 
-### Project Title
-Bikeshare Evaluation Tool
+### Bikeshare Evaluation Tool
 
-###Requirements
+
+### Requirements
 
 Python (version 3.8 or higher)
 
