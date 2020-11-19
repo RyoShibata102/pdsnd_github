@@ -41,8 +41,15 @@ The program displays Statistics about:
     * counts of each user type
     * counts of each gender (only available for NYC and Chicago)
     * earliest, most recent, most common year of birth (only available for NYC and Chicago)
+    
+### How to use
 
-
+1. Check reqiurements
+1. Create folder "bikeshare_data"
+    1. Download datasets and save it in bikeshare_data (see Files used section)
+    1. bikeshare.py needs to be in the same folder where the "bikeshare_data" folder is
+1. run bikeshare.py
+ 
 ### Files used
 Data provided by Motivate:
 
